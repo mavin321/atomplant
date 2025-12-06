@@ -1,0 +1,11 @@
+FROM node:20-alpine
+WORKDIR /app
+
+COPY frontend/package.json frontend/package-lock.json* frontend/tsconfig.json frontend/tsconfig.node.json frontend/vite.config.ts frontend/index.html ./frontend/
+COPY frontend/src ./frontend/src
+WORKDIR /app/frontend
+
+RUN npm install && npm run build
+
+EXPOSE 3000
+CMD ["npm", "run", "dev", "--", "--host", "--port", "3000"]

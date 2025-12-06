@@ -1,0 +1,67 @@
+# -------------------------------------------------------------
+# Dependency & Environment Management
+# -------------------------------------------------------------
+# Python virtual environment directories (choose which you use)
+.venv/
+venv/
+env/
+
+# Node.js dependencies
+/node_modules
+
+# PHP Composer dependencies
+/vendor
+
+# -------------------------------------------------------------
+# Sensitive Data and Configuration
+# -------------------------------------------------------------
+# Environment variables and secrets
+.env
+.env.local
+config.json    # Only if it contains secrets
+secrets.yaml
+*.pem
+*.key
+
+# -------------------------------------------------------------
+# Build Artifacts, Compiled Code, and Temporary Files
+# -------------------------------------------------------------
+# Python bytecode files
+*.pyc
+__pycache__/
+
+# Build output directories
+/build
+/dist
+/out
+/target
+
+# Log and temporary files
+*.log
+*.tmp
+*.temp
+temp/
+.cache/
+
+# -------------------------------------------------------------
+# IDE and Editor Configuration Files
+# -------------------------------------------------------------
+# JetBrains IDEs (IntelliJ, PyCharm, WebStorm, etc.)
+.idea/
+
+# VS Code
+.vscode/
+
+# Eclipse
+.project
+.classpath
+*.iml
+
+# -------------------------------------------------------------
+# Operating System & Local Environment Files
+# -------------------------------------------------------------
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
